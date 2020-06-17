@@ -45,7 +45,7 @@ router.get("/", async function (req, res, next) {
 
   var account = "0x81bfF584c0b449c7Bf9BAc47aC17d2ECe397b3eA";
 
-  var privateKey = new Buffer.from("", "hex");
+  var privateKey = new Buffer.from("ADD PRIVATEKEY HERE", "hex");
 
   let _nonce = await web3.eth.getTransactionCount(account);
   _nonce = web3.utils.toHex(_nonce);
